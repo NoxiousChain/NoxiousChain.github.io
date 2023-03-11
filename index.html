@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Electric Sun Studios</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="images/elsunfavicon.png">
+    </head>
+
+    <body>
+    <section class="header" id="homescreen">
+        <nav>
+            <a href="index.html"><img src="images/elsunlogosmall2.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#homescreen">HOME</a></li>
+                    <li><a href="#foundersection">ABOUT</a></li>
+                    <li><a href="#upproj">UPCOMING PROJECT</a></li>
+                    <li><a href="#dblog">DEV BLOG</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    <div class="text-box">
+        <h1>Independent Game Studio formed at Drexel University</h1>
+        <p>Electric Sun Studios is a self-funded, independent game studio formed by four students <br> Kevin, Forest, Joel and Jack from Drexel University</p>
+        <a href="#foundersection" class="hero-btn">Meet The Founders</a>
+    </div>
+
+    </section>
+
+    <!--Founders code-->
+    <section class="Founders" id="foundersection">
+        <h1>Electric Sun Studios' Founders</h1>
+        <p>Test test test test test test</p>
+        
+        <div class="row">
+            <div class="founder-col">
+                <h3>Kevin Sweeney</h3>
+                <p>Product Owner, Programmer and <br>Misc. Programmer</p>
+            </div>
+            <div class="founder-col">
+                <h3>Forest McKinney</h3>
+                <p>Lead Programmer and Misc. Programmer</p>
+            </div>
+            <div class="founder-col">
+                <h3>Joel Johnson</h3>
+                <p>Art and Misc. Programmer</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Upcoming projects-->
+    <section class="upcoming" id="upproj">
+        <h1>Upcoming Project</h1>
+        <p>A small gallery of pictures of the in development project "UNTITLED GAME" that is coming soon</p>
+
+        <div class="row">
+            <div class="upcoming-col">
+                <img src="images/projectpicture.png">
+                <div class="layer">
+                    <h3>WORLD BACKGROUND</h3>
+                </div>
+            </div>
+            <div class="upcoming-col">
+                <img src="images/projectpicture2.png">
+                <div class="layer">
+                    <h3>INTRO SCREEN</h3>
+                </div>
+            </div>
+            <div class="upcoming-col">
+                <img src="images/projectpicture3.png">
+                <div class="layer">
+                    <h3>OPTIONS MENU</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Dev Blog-->
+    <section class="devblog" id="dblog">
+        <h1>Development Blog</h1>
+        <p>Updates On The Studio, Teams, and Projects</p>
+
+        <div class="row">
+            <div class="devblog-col">
+                <img src="images/placeholder.jpg">
+                <h3>3/10/2023</h3>
+                <p>Something important about development goes here</p>
+            </div>
+            <div class="devblog-col">
+                <img src="images/placeholder.jpg">
+                <h3>3/10/2023</h3>
+                <p>Something important about development goes here</p>
+            </div>
+            <div class="devblog-col">
+                <img src="images/placeholder.jpg">
+                <h3>3/10/2023</h3>
+                <p>Something important about development goes here</p>
+            </div>
+        </div>
+    </section>
+
+    <!--JS for menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    </body>
+</html>
