@@ -22,6 +22,7 @@
                     <li><a href="#foundersection">ABOUT</a></li>
                     <li><a href="#upproj">UPCOMING PROJECT</a></li>
                     <li><a href="#dblog">DEV BLOG</a></li>
+                    <li><a id="dark-btn">DARK MODE</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -64,7 +65,7 @@
     <!--Upcoming projects-->
     <section class="upcoming" id="upproj">
         <h1>Upcoming Project</h1>
-        <p>A small gallery of pictures of the in development project "ARCHASM" that is coming soon</p>
+        <p>A small gallery of pictures of the in development project "UNTITLED GAME" that is coming soon</p>
 
         <div class="row">
             <div class="upcoming-col">
@@ -135,6 +136,14 @@
         }
         function hideMenu(){
             navLinks.style.right = "-200px";
+        }
+    </script>
+
+    <!--darkmode-->
+    <script>
+        const themeBtn = document.getElementById("dark-btn");
+        themeBtn.onclick = () =>{
+            themeBtn.classList.toggle("")
         }
     </script>
 

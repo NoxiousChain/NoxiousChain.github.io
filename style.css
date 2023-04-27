@@ -60,6 +60,11 @@ nav img{
     width: 100%;
 }
 
+.changeTheme{
+    background: #1D1E22;
+    color: #eee;
+}
+
 .text-box{
     width: 90%;
     color: #fff;
@@ -70,8 +75,16 @@ nav img{
     text-align: center;
 }
 
+@font-face{
+    font-family: titlefont;
+    src: url(fonts/VCR_OSD_MONO_1.001.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
 .text-box h1{
     position: relative;
+    font-family: 'titlefont', 'Poppins', sans-serif ;
     font-size: 62px;
     color: #fff;
     -webkit-text-stroke: 0.3vw #FA29AC;
