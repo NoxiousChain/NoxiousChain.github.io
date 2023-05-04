@@ -29,7 +29,7 @@
         </nav>
 
     <div class="text-box">
-        <h1 data-text="Independent Game Studio formed at Drexel University">Independent Game Studio formed at Drexel University</h1>
+        <h1 data-text="Independent Game Studio formed at Drexel University" class="fade-in">Independent Game Studio formed at Drexel University</h1>
         <p>Electric Sun Studios is a self-funded, independent game studio formed by four students <br> Kevin, Forest, Joel and Jack from Drexel University</p>
         <a href="#foundersection" class="hero-btn">Meet The Founders</a>
     </div>
@@ -38,34 +38,38 @@
 
     <!--Founders code-->
     <section class="Founders" id="foundersection">
-        <h1>Electric Sun Studios' Founders</h1>
+        <h1><span>Electric Sun Studios' Founders</span></h1>
         <p>Meet The Founders Of Our Studio</p>
-        
         <div class="founderrow">
             <div class="founder-col">
-                <h3>Kevin Sweeney</h3>
-                <p>Product Owner, Programmer and <br>Misc. Programmer</p>
+                <a href="https://www.linkedin.com/in/kevin-sweeney-b556b1261/" target="_blank" rel="noopener noreferrer">
+                    <h3>Kevin Sweeney</h3>
+                    <p>Product Owner, Programmer, and Misc. Programmer</p>
+                </a>
             </div>
             <div class="founder-col">
-                <h3>Forest McKinney</h3>
-                <p>Lead Programmer and Misc. Programmer</p>
+                <a href="https://www.linkedin.com/in/forest-mckinney-059907256/" target="_blank" rel="noopener noreferrer">
+                    <h3>Forest McKinney</h3>
+                    <p>Lead Programmer and Misc. Programmer</p>
+                </a>
             </div>
+        </div>
+        <div class="founderrow">
             <div class="founder-col">
                 <h3>Joel Johnson</h3>
-                <p>Art and Misc. Programmer</p>
+                <p>Art, Programmer, and Misc. Programmer</p>
             </div>
             <div class="founder-col">
                 <h3>Jack Thompson</h3>
-                <p>Story and Misc. Programmer</p>
+                <p>Creative Director and Misc. Programmer</p>
             </div>
         </div>
-
     </section>
 
     <!--Upcoming projects-->
     <section class="upcoming" id="upproj">
         <h1>Upcoming Project</h1>
-        <p>A small gallery of pictures of the in development project "UNTITLED GAME" that is coming soon</p>
+        <p>A small gallery of pictures of the in-development project <img src="images/logo2resize.png" width="100px" height="auto"> that is coming soon</p>
 
         <div class="row">
             <div class="upcoming-col">
@@ -92,60 +96,68 @@
     <!--Dev Blog-->
     <section class="devblog" id="dblog">
         <h1>Development Blog</h1>
-        <p>Updates On The Studio, Teams, and Projects</p>
+        <p>Updates On The Studio, Team, and Projects</p>
 
-        <div class="row1">
+        <div>
             <div class="devblog-col">
                 <img src="images/archasm_banner.png">
                 <h3>4/6/2023</h3>
                 <p>This past month the team has offically decided on a name for our upcoming project...."Archasm". Since the last update not much has happened on the side of development,
                 the team took a week long break. We started to work on enemies to be added to the game, as of right now we have a goblin, illustrated in the image above by Jack Thompson, that spawns in and runs towards the player. We are working on a health and attacking system for the goblin.
-                We implemented an inventory system as of right now it only contains swords but most importantly it saves the players inventory per game session. We are excited to see what we come up with for next months update!
+                We implemented an inventory system as of right now it only contains swords but ost importantly it saves the players inventory per game session. We are excited to see what we come up with for next months update! -K.S
                 </p>
             </div>
             <div class="devblog-col">
                 <img src="images/bannerbackground.png">
                 <h3>3/9/2023</h3>
                 <p>Today we presented a playable demo (to our current liking) to show where we are right now in our project. We still have a long way to go but with only a month of work put in
-                so far we are excited to see what the next month will bring us.</p>
+                so far we are excited to see what the next month will bring us. -K.S</p>
             </div>
             <div class="devblog-col">
                 <img src="images/devblog2img.png">
                 <h3>2/6/2023</h3>
                 <p>The project has been created!!! Our project will be a 2D pixel-based survival game, the player will be able to battle monsters, collect loot and mine rare ores.
                 The team has decided that the engine we will use for our project is Godot 3.5. Godot speciallizes in the creation of 2D and 3D games with the engine not being very taxing on the
-                teams computers.</p>
+                teams computers. -K.S</p>
             </div>
-        </div>
-
-        <div class="row">
             <div class="devblog-col">
                 <img src="images/devblog1img.png">
                 <h3>1/26/2023</h3>
                 <p>Initial Commit! The team has been created consisting of Kevin, Forest, Joel and Jack. Not much has happened as for project development, but atleast the
-                team is formulated.</p>
+                team is formulated. -K.S</p>
             </div>
         </div>
     </section>
 
     <!--JS for menu-->
-    <script>
-        var navLinks = document.getElementById("navLinks");
-        function showMenu(){
-            navLinks.style.right = "0";
-        }
-        function hideMenu(){
-            navLinks.style.right = "-200px";
-        }
-    </script>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
 
     <!--darkmode-->
-    <script>
-        const themeBtn = document.getElementById("dark-btn");
-        themeBtn.onclick = () =>{
-            themeBtn.classList.toggle("")
-        }
-    </script>
+        <script>
+            const darkBtn = document.getElementById('dark-btn');
+            const bodyEl = document.body;
 
+            darkBtn.addEventListener('click', () => {
+            bodyEl.classList.toggle('dark-mode');
+            });
+
+            darkBtn.addEventListener('mouseenter', () => {
+            darkBtn.style.cursor = 'pointer';
+        });
+
+            darkBtn.addEventListener('mouseleave', () => {
+            darkBtn.style.cursor = 'auto';
+        });
+        </script>
+    
+    <!--typing animation-->
     </body>
 </html>

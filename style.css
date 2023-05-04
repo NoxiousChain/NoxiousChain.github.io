@@ -17,6 +17,23 @@ html{
     position: relative;
 }
 
+body{
+    /* Default styles */
+    background-color: white;
+    color: #282C2F;
+    transition: background-color 0.5s ease;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #282C2F;
+    color: white;
+}
+
+.dark-btn{
+    cursor: pointer;
+}
+
 nav{
     display: flex;
     padding:2% 6% ;
@@ -73,6 +90,21 @@ nav img{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+.fade-in{
+    opacity: 0;
+    animation: fade-in 1s  ease-in-out forwards;
+    animation-delay: 0.7s;
+}
+
+@keyframes fade-in {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 @font-face{
@@ -190,27 +222,62 @@ p{
     justify-content: space-between;
 }
 .founderrow{
-    margin-top: 5%;
-    display: inline-block;
-    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .founder-col{
-    flex-basis: 31%;
-    background: #fff3f3;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 12px;
-    box-sizing: border-box;
-    transition: 0.5s;
-}
-h3{
+    width: 25%;
+    margin: 1%;
+    padding: 20px;
+    border: 1px solid #FA29AC;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
-    font-weight: 600;
-    margin: 10px 0;
+    border-radius: 10px;
+    background-color: #fff3f3;
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+}
+.founder-col h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.founder-col a{
+    text-decoration: none;
+    color: #666;
+}
+.founder-col a h3{
+    text-decoration: none;
+    color: black;
+}
+.founder-col p{
+    font-size: 14px;
+    line-height: 22px;
+    color: #666;
 }
 .founder-col:hover{
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
 }
+
+.Founders h1 span {
+    background: linear-gradient(to right, #F91DB1, #FA38A3, #FE847E, #FFB765, #FFED4C);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+
 @media(max-width: 700px){
     .row{
         flex-direction: column;
@@ -220,6 +287,12 @@ h3{
 @media(max-width: 700px){
     .row1{
         flex-direction: column;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .founder-col h3 {
+      color: #000000; /* black color in dark mode */
     }
 }
 
@@ -286,15 +359,18 @@ h3{
     margin-bottom: 5%;
     text-align: left;
 }
-.devblog-col img{
+.devblog .devblog-col img{
     width: 100%;
+    border: 3px solid #FA29AC;
     border-radius: 10px;
 }
 .devblog-col p{
     padding: 0;
+    text-align: center;
 }
 .devblog-col h3{
     margin-top: 16px;
     margin-bottom: 15px;
-    text-align: left;
+    text-align: center;
 }
+
