@@ -4,164 +4,141 @@
         <meta name="viewport" content="with=device-width, initial-scale=1.0">
         <title>Electric Sun Studios</title>
         <link rel="stylesheet" href="style.css">
+        <script defer src="app.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <link rel="icon" href="images/elsunfavicon.png">
     </head>
 
     <body>
-    <section class="header" id="homescreen">
-        <nav>
-            <a href="index.html"><img src="images/elsunlogosmall2.png"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="#homescreen">HOME</a></li>
-                    <li><a href="#foundersection">ABOUT</a></li>
-                    <li><a href="#upproj">UPCOMING PROJECT</a></li>
-                    <li><a href="#dblog">DEV BLOG</a></li>
-                    <li><a id="dark-btn">DARK MODE</a></li>
-                </ul>
-            </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
+        <section class="header" id="homescreen">
+            <nav>
+                <a href="index.html"><img src="images/elsunlogosmall2.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="#homescreen">HOME</a></li>
+                        <li><a href="#foundersection">ABOUT</a></li>
+                        <li><a href="#upproj">UPCOMING PROJECT</a></li>
+                        <li><a href="#dblog">DEV BLOG</a></li>
+                        <li><a id="dark-btn" title="Toggle Dark Mode"><i id="dark-icon" class="fas fa-moon"></i></a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
 
-    <div class="text-box">
-        <h1 data-text="Independent Game Studio formed at Drexel University" class="fade-in">Independent Game Studio formed at Drexel University</h1>
-        <p>Electric Sun Studios is a self-funded, independent game studio formed by four students <br> Kevin, Forest, Joel and Jack from Drexel University</p>
-        <a href="#foundersection" class="hero-btn">Meet The Founders</a>
-    </div>
-
-    </section>
-
-    <!--Founders code-->
-    <section class="Founders" id="foundersection">
-        <h1><span>Electric Sun Studios' Founders</span></h1>
-        <p>Meet The Founders Of Our Studio</p>
-        <div class="founderrow">
-            <div class="founder-col">
-                <a href="https://www.linkedin.com/in/kevin-sweeney-b556b1261/" target="_blank" rel="noopener noreferrer">
-                    <h3>Kevin Sweeney</h3>
-                    <p>Product Owner, Programmer, and Misc. Programmer</p>
-                </a>
-            </div>
-            <div class="founder-col">
-                <a href="https://www.linkedin.com/in/forest-mckinney-059907256/" target="_blank" rel="noopener noreferrer">
-                    <h3>Forest McKinney</h3>
-                    <p>Lead Programmer and Misc. Programmer</p>
-                </a>
-            </div>
+        <div class="text-box">
+            <h1 data-text="Independent Game Studio formed at Drexel University" class="fade-in">Independent Game Studio formed at Drexel University</h1>
+            <p>Electric Sun Studios is a self-funded, independent game studio formed by four students <br> Kevin, Forest, Joel and Jack from Drexel University</p>
+            <a href="#foundersection" class="hero-btn">Meet The Founders</a>
         </div>
-        <div class="founderrow">
-            <div class="founder-col">
-                <a href="https://www.linkedin.com/in/joel-johnson-5523511b5/" target="_blank" rel="noopener noreferrer">
-                    <h3>Joel Johnson</h3>
-                    <p>Art, Programmer, and Misc. Programmer</p>
-                </a>
-            </div>
-            <div class="founder-col">
-                <a href="https://www.linkedin.com/in/jack-thompson-704200275/" target="_blank" rel="noopener noreferrer">
-                    <h3>Jack Thompson</h3>
-                    <p>Creative Director and Misc. Programmer</p>
-                </a>
-            </div>
-        </div>
-    </section>
 
-    <!--Upcoming projects-->
-    <section class="upcoming" id="upproj">
-        <h1>Upcoming Project</h1>
-        <p>A small gallery of pictures of the in-development project <img src="images/logo2resize.png" width="100px" height="auto"> that is coming soon</p>
+        </section>
 
-        <div class="row">
-            <div class="upcoming-col">
-                <img src="images/projectpicture.png">
-                <div class="layer">
-                    <h3>WORLD BACKGROUND</h3>
+        <!--Founders code-->
+        <section class="hidden Founders" id="foundersection">
+            <h1><span>Electric Sun Studios' Founders</span></h1>
+            <p>Meet The Founders Of Our Studio</p>
+            <div class="founderrow">
+                <div class="founder-col">
+                    <a href="https://www.linkedin.com/in/kevin-sweeney-b556b1261/" target="_blank" rel="noopener noreferrer">
+                        <h3>Kevin Sweeney</h3>
+                        <p>Product Owner, Programmer, and Misc. Programmer</p>
+                    </a>
+                </div>
+                <div class="founder-col">
+                    <a href="https://www.linkedin.com/in/forest-mckinney-059907256/" target="_blank" rel="noopener noreferrer">
+                        <h3>Forest McKinney</h3>
+                        <p>Lead Programmer and Misc. Programmer</p>
+                    </a>
                 </div>
             </div>
-            <div class="upcoming-col">
-                <img src="images/projectpicture2.png">
-                <div class="layer">
-                    <h3>INTRO SCREEN</h3>
+            <div class="founderrow">
+                <div class="founder-col">
+                    <a href="https://www.linkedin.com/in/joel-johnson-5523511b5/" target="_blank" rel="noopener noreferrer">
+                        <h3>Joel Johnson</h3>
+                        <p>Art, Programmer, and Misc. Programmer</p>
+                    </a>
+                </div>
+                <div class="founder-col">
+                    <a href="https://www.linkedin.com/in/jack-thompson-704200275/" target="_blank" rel="noopener noreferrer">
+                        <h3>Jack Thompson</h3>
+                        <p>Creative Director and Misc. Programmer</p>
+                    </a>
                 </div>
             </div>
-            <div class="upcoming-col">
-                <img src="images/projectpicture3.png">
-                <div class="layer">
-                    <h3>OPTIONS MENU</h3>
+        </section>
+
+        <!--Upcoming projects-->
+        <section class="hidden upcoming" id="upproj">
+            <h1>Upcoming Project</h1>
+            <p>A small gallery of pictures of the in-development project <img src="images/logo2resize.png" width="100px" height="auto"> that is coming soon</p>
+
+            <div class="row">
+                <div class="upcoming-col">
+                    <img src="images/projectpicture.png">
+                    <div class="layer">
+                        <h3>WORLD BACKGROUND</h3>
+                    </div>
+                </div>
+                <div class="upcoming-col">
+                    <img src="images/projectpicture2.png">
+                    <div class="layer">
+                        <h3>INTRO SCREEN</h3>
+                    </div>
+                </div>
+                <div class="upcoming-col">
+                    <img src="images/projectpicture3.png">
+                    <div class="layer">
+                        <h3>OPTIONS MENU</h3>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!--Dev Blog-->
-    <section class="devblog" id="dblog">
-        <h1>Development Blog</h1>
-        <p>Updates On The Studio, Team, and Projects</p>
-
-        <div>
-            <div class="devblog-col">
-                <img src="images/archasm_banner.png">
-                <h3>4/6/2023</h3>
-                <p>This past month the team has offically decided on a name for our upcoming project...."Archasm". Since the last update not much has happened on the side of development,
-                the team took a week long break. We started to work on enemies to be added to the game, as of right now we have a goblin, illustrated in the image above by Jack Thompson, that spawns in and runs towards the player. We are working on a health and attacking system for the goblin.
-                We implemented an inventory system as of right now it only contains swords but ost importantly it saves the players inventory per game session. We are excited to see what we come up with for next months update! -K.S
-                </p>
+        <!--Dev Blog-->
+        <section class="hidden devblog" id="dblog">
+            <h1>Development Blog</h1>
+            <p>Updates On The Studio, Team, and Projects</p>
+            <div>
+                <div class="devblog-col">
+                    <img src="images/adevbanner.png">
+                    <h3>5/23/2023</h3>
+                    <p>We recently added a new boss called the goblin king, we also recently added a somewhat working npc that talks to you when you first arrive in the world.
+                    Forest continued working on world generation making it no longer predetermined by the engine, it is now created by C++ code and now randomized every time the world is loaded. Start up music was recently added to the start and main menu of the game that was
+                    created by Jack Thompson. Our next goal is to work on game saving features. - K.S
+                    </p>
+                </div>
+                <div class="devblog-col">
+                    <img src="images/archasm_banner.png">
+                    <h3>4/6/2023</h3>
+                    <p>This past month the team has offically decided on a name for our upcoming project...."Archasm". Since the last update not much has happened on the side of development,
+                    the team took a week long break. We started to work on enemies to be added to the game, as of right now we have a goblin, illustrated in the image above by Jack Thompson, that spawns in and runs towards the player. We are working on a health and attacking system for the goblin.
+                    We implemented an inventory system as of right now it only contains swords but ost importantly it saves the players inventory per game session. We are excited to see what we come up with for next months update! -K.S
+                    </p>
+                </div>
+                <div class="devblog-col">
+                    <img src="images/bannerbackground.png">
+                    <h3>3/9/2023</h3>
+                    <p>Today we presented a playable demo (to our current liking) to show where we are right now in our project. We still have a long way to go but with only a month of work put in
+                    so far we are excited to see what the next month will bring us. -K.S</p>
+                </div>
+                <div class="devblog-col">
+                    <img src="images/devblog2img.png">
+                    <h3>2/6/2023</h3>
+                    <p>The project has been created!!! Our project will be a 2D pixel-based survival game, the player will be able to battle monsters, collect loot and mine rare ores.
+                    The team has decided that the engine we will use for our project is Godot 3.5. Godot speciallizes in the creation of 2D and 3D games with the engine not being very taxing on the
+                    teams computers. -K.S</p>
+                </div>
+                <div class="devblog-col">
+                    <img src="images/devblog1img.png">
+                    <h3>1/26/2023</h3>
+                    <p>Initial Commit! The team has been created consisting of Kevin, Forest, Joel and Jack. Not much has happened as for project development, but atleast the
+                    team is formulated. -K.S</p>
+                </div>
             </div>
-            <div class="devblog-col">
-                <img src="images/bannerbackground.png">
-                <h3>3/9/2023</h3>
-                <p>Today we presented a playable demo (to our current liking) to show where we are right now in our project. We still have a long way to go but with only a month of work put in
-                so far we are excited to see what the next month will bring us. -K.S</p>
-            </div>
-            <div class="devblog-col">
-                <img src="images/devblog2img.png">
-                <h3>2/6/2023</h3>
-                <p>The project has been created!!! Our project will be a 2D pixel-based survival game, the player will be able to battle monsters, collect loot and mine rare ores.
-                The team has decided that the engine we will use for our project is Godot 3.5. Godot speciallizes in the creation of 2D and 3D games with the engine not being very taxing on the
-                teams computers. -K.S</p>
-            </div>
-            <div class="devblog-col">
-                <img src="images/devblog1img.png">
-                <h3>1/26/2023</h3>
-                <p>Initial Commit! The team has been created consisting of Kevin, Forest, Joel and Jack. Not much has happened as for project development, but atleast the
-                team is formulated. -K.S</p>
-            </div>
-        </div>
-    </section>
-
-    <!--JS for menu-->
-        <script>
-            var navLinks = document.getElementById("navLinks");
-            function showMenu(){
-                navLinks.style.right = "0";
-            }
-            function hideMenu(){
-                navLinks.style.right = "-200px";
-            }
-        </script>
-
-    <!--darkmode-->
-        <script>
-            const darkBtn = document.getElementById('dark-btn');
-            const bodyEl = document.body;
-
-            darkBtn.addEventListener('click', () => {
-            bodyEl.classList.toggle('dark-mode');
-            });
-
-            darkBtn.addEventListener('mouseenter', () => {
-            darkBtn.style.cursor = 'pointer';
-        });
-
-            darkBtn.addEventListener('mouseleave', () => {
-            darkBtn.style.cursor = 'auto';
-        });
-        </script>
-    
-    <!--typing animation-->
+        </section>
     </body>
 </html>

@@ -8,6 +8,26 @@ html{
     scroll-behavior: smooth;
 }
 
+/*Scroll to reveal*/
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
 .header{
     min-height: 100vh;
     width: 100%;
@@ -15,6 +35,10 @@ html{
     background-position: center;
     background-size: cover;
     position: relative;
+}
+
+section{
+    min-height: 100vh;
 }
 
 body{
@@ -33,6 +57,11 @@ body.dark-mode {
 .dark-btn{
     cursor: pointer;
 }
+
+.fa-moon-o:before {
+    content: "\f186";
+}
+
 
 nav{
     display: flex;
